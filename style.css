@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Dancing Script', cursive;
+}
+.main{
+    background-color: #ebebeb;
+}
+.main .nav{
+    width: 100%;
+    height: 60px;
+    display: flex;
+}
+.main .nav .logo{
+    position: absolute;
+    left: 0;
+    padding: 10px;
+    margin: 10px;
+	color: #ebebeb;
+	text-shadow: -1px 1px 2px #000,
+				  1px 1px 2px #000,
+				  1px -1px 0 #000,
+				  -1px -1px 0 #000;
+}
+.main .nav .mode{
+    width: 100%;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+	color: #ebebeb;
+	text-shadow: -1px 1px 2px #000,
+				  1px 1px 2px #000,
+				  1px -1px 0 #000,
+				  -1px -1px 0 #000;
+}
+.main .nav .mode span{
+    padding: 5px;
+    text-transform: capitalize;
+    font-size: 20px;
+    border-radius: 20px;
+    animation: colorchange 1s infinite;
+}
+.main .nav .cart i{
+    padding-right: 10px;
+}
+.main .nav .cart{
+    position: absolute;
+    right: 0;
+    padding: 10px;
+    margin: 10px;
+	color: #ebebeb;
+	text-shadow: -1px 1px 2px #000,
+				  1px 1px 2px #000,
+				  1px -1px 0 #000,
+				  -1px -1px 0 #000;
+}
+.newproducts{
+    width: 100%;
+    margin: 15px 0;
+    position: relative;
+}
+.newproducts .heading{
+    text-transform: uppercase;
+    text-align: center;
+	color: #ebebeb;
+	font-size: 25px;
+	text-shadow: -1px 1px 2px #000,
+				  1px 1px 2px #000,
+				  1px -1px 0 #000,
+				  -1px -1px 0 #000;
+} 
+.newproducts .col{
+    display: flex;
+}
+.newproducts .col .card{
+    width: 25%;
+    height: 300px;
+    margin: 10px;
+    align-content: center;
+    justify-content: center;
+}
+.newproducts .col .card .img{
+    width: 85%;
+    height: 75%;
+}
+.newproducts .col .card .img h2{
+    width: fit-content;
+    height: 5%;
+    padding: 5px;
+    background: #000;
+	color: #ebebeb;
+	text-shadow: -1px 1px 2px #000,
+				  1px 1px 2px #000,
+				  1px -1px 0 #000,
+				  -1px -1px 0 #000;
+    animation: zoom .5s infinite;
+}
+.newproducts .col .row .img h2{
+    height: auto;
+    border-radius: 50%;
+    animation: bounce .5s infinite;
+}
+.newproducts .col .card .img img{
+    width: 50%;
+    height: 100%;
+    position: relative;
+    left: 30%;
+    margin-top: 10%;
+    object-position: center;
+    object-fit: cover;
+}
+.newproducts .col .card .text{
+    position: relative;
+    top: 23%;
+    width: 100%;
+}
+.newproducts .col .card .text button{
+    position: absolute;
+    padding: 5px;
+    right: 10px;
+    bottom: 0;
+    background: #000;
+    border: 0px;
+	color: #ebebeb;
+	text-shadow: -1px 1px 2px #000,
+				  1px 1px 2px #000,
+				  1px -1px 0 #000,
+				  -1px -1px 0 #000;
+    font-weight: bolder;
+    transition: 0.5s;
+}
+.newproducts .col .card .text button:hover{
+    transform-origin: left;
+    background-color: #f00;
+/*    color: #000;*/
+}
+.categories{
+    width: 100%;
+    display: flex;
+}
+.categories .col{
+    margin: 10px;
+}
+.categories .col:nth-child(odd){
+    width: 40%;
+}
+.categories .col:nth-child(even){
+    width: 20%;
+}
+.categories .col .heading{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    text-align: center;
+	color: #ebebeb;
+	text-shadow: -1px 1px 2px #000,
+				  1px 1px 2px #000,
+				  1px -1px 0 #000,
+				  -1px -1px 0 #000;
+    animation: animate 1s infinite;
+}
+.categories .col .row{
+    display: inline-flex;
+    width: 45%;
+}
+.categories .col .row a{
+    width: 100%;
+    text-align: center;
+    padding: 15px;
+    margin: 5px;
+    text-decoration: none;
+	color: #ebebeb;
+	text-shadow: -1px 1px 2px #000,
+				  1px 1px 2px #000,
+				  1px -1px 0 #000,
+				  -1px -1px 0 #000;
+    transition: 1s;
+}
+.categories .col .row a:hover{
+/*    background: #000;*/
+	color: #fff;
+	text-shadow: -1px 1px 2px #000,
+				  1px 1px 2px #000,
+				  1px -1px 0 #000,
+				  -1px -1px 0 #000;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.8);
+}
+.quote{
+    padding: 10px;
+    margin: 10px;
+}
+.quote h1{
+    position: relative;
+    text-align: center;
+	color: #ebebeb;
+	text-shadow: -1px 1px 2px #000,
+				  1px 1px 2px #000,
+				  1px -1px 0 #000,
+				  -1px -1px 0 #000;
+}
+@keyframes bounce{
+    0%,50%,100%{
+        transform: translateY(0);
+    }
+    25%{
+        transform: translateY(2px);
+    }
+    75%{
+        transform: translateY(-2px);
+    }
+    
+}
+@keyframes zoom{
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1.05);
+    }
+}
+@keyframes animate{
+    0%{
+        font-size: 32px;
+        box-shadow: 0px 0px 0px rgba(0,0,0,0);
+    }
+    100%{
+        font-size: 33px;
+        box-shadow: 2px 2px 5px rgba(0,0,0,0.8); 
+    }
+}
+@keyframes colorchange{
+    0%{
+        background: transparent;
+        color: #fff;
+        text-shadow: -1px 1px 2px #000,
+                      1px 1px 2px #000,
+                      1px -1px 0 #000,
+                      -1px -1px 0 #000;
+    }
+    100%{
+        background: #000;
+        color: #000;
+        text-shadow: -1px 1px 2px #fff,
+                      1px 1px 2px #fff,
+                      1px -1px 0 #fff,
+                      -1px -1px 0 #fff;
+    }
+}
